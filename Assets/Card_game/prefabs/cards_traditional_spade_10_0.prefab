@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -2103899200112351648}
   - component: {fileID: -8822658567204985923}
   - component: {fileID: -5504339738293583410}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cards_traditional_spade_10_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,9 +70,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1610931801
+  m_SortingLayer: 9
+  m_SortingOrder: 122
   m_Sprite: {fileID: 21300002, guid: ff6eff374f4895e409169675beefa21b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -109,7 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardGameObject: {fileID: 0}
+  cardBack: {fileID: 21300000, guid: ae8218fc9f4039246b0f95fee3eb63b0, type: 3}
+  cardFront: {fileID: 0}
   suitColor: 0
   suit: 1
   rank: 0

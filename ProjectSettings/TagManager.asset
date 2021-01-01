@@ -41,9 +41,87 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Stack
+    uniqueID: 2213302563
+    locked: 0
   - name: FaceUp
     uniqueID: 833203011
     locked: 0
   - name: SelectedCard
     uniqueID: 2516845911
+    locked: 0
+  - name: 1
+    uniqueID: 1477814627
+    locked: 0
+  - name: 2
+    uniqueID: 1705368931
+    locked: 0
+  - name: 3
+    uniqueID: 983773307
+    locked: 0
+  - name: 4
+    uniqueID: 2939070781
+    locked: 0
+  - name: 5
+    uniqueID: 4217487963
+    locked: 0
+  - name: 6
+    uniqueID: 2684035495
+    locked: 0
+  - name: 7
+    uniqueID: 3552532321
+    locked: 0
+  - name: 8
+    uniqueID: 561282373
+    locked: 0
+  - name: 9
+    uniqueID: 2042010751
+    locked: 0
+  - name: 10
+    uniqueID: 1867322027
+    locked: 0
+  - name: 11
+    uniqueID: 1710589817
+    locked: 0
+  - name: 12
+    uniqueID: 4165848987
+    locked: 0
+  - name: 13
+    uniqueID: 403875099
+    locked: 0
+  - name: 14
+    uniqueID: 1581026385
+    locked: 0
+  - name: 15
+    uniqueID: 3156384085
+    locked: 0
+  - name: 16
+    uniqueID: 1038325775
+    locked: 0
+  - name: 17
+    uniqueID: 1230768789
+    locked: 0
+  - name: 18
+    uniqueID: 3954254221
+    locked: 0
+  - name: 19
+    uniqueID: 1226250487
+    locked: 0
+  - name: 20
+    uniqueID: 3030864187
+    locked: 0
+  - name: 21
+    uniqueID: 614944815
+    locked: 0
+  - name: 22
+    uniqueID: 1965794397
+    locked: 0
+  - name: 23
+    uniqueID: 3227573173
+    locked: 0
+  - name: 24
+    uniqueID: 68712925
+    locked: 0
+  - name: 25
+    uniqueID: 544064557
     locked: 0

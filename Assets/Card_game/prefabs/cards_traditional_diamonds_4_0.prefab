@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 956016701085759052}
   - component: {fileID: 5861412845537993421}
   - component: {fileID: 4654612843326596372}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cards_traditional_diamonds_4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,9 +70,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 2042010751
+  m_SortingLayer: 12
+  m_SortingOrder: 122
   m_Sprite: {fileID: 21300004, guid: e26f72cae64cd1d43af4c85d0fbd0428, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -109,7 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardGameObject: {fileID: 0}
+  cardBack: {fileID: 21300000, guid: ae8218fc9f4039246b0f95fee3eb63b0, type: 3}
+  cardFront: {fileID: 0}
   suitColor: 1
   suit: 2
   rank: 0

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -6175251371258405138}
   - component: {fileID: -7148388384788786403}
   - component: {fileID: 5262824951280407916}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cards_traditional_club_9_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,9 +70,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 403875099
+  m_SortingLayer: 16
+  m_SortingOrder: 122
   m_Sprite: {fileID: 21300002, guid: b798c3f19831efc428e413e25fa995b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -109,7 +109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardGameObject: {fileID: 0}
+  cardBack: {fileID: 21300000, guid: ae8218fc9f4039246b0f95fee3eb63b0, type: 3}
+  cardFront: {fileID: 0}
   suitColor: 0
   suit: 0
   rank: 0

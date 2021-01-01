@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 	{
 		DontDestroyOnLoad(gameObject);
 	}
-	Stack<GameObject> deck;
+	public Stack<GameObject> deck;
 	public List<GameObject> deckPrefabs = new List<GameObject>();
 	public float scale = .3f;
 	public List<GameObject> columns = new List<GameObject>();
@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 	void Start()
 	{
 		InitializeDeck();
+		Screen.fullScreen = true;
 	}
 
 	// Update is called once per frame
@@ -56,12 +57,17 @@ public class GameManager : MonoBehaviour
 		List<GameObject> playingCardList = new List<GameObject>();
 		foreach (var col in columns)
 		{
-			playingCardList.Add(col.GetComponentInChildren<PlayingCard>().gameObject);
+			if(col.GetComponentInChildren<PlayingCard>() != null)
+			{
+				var numberOfColumns = col.GetComponentsInChildren<PlayingCard>()?.Length != null ? col.GetComponentsInChildren<PlayingCard>()?.Length : 0;
+				playingCardList.Add(col.GetComponentInChildren<PlayingCard>().gameObject);
+				Debug.Log(numberOfColumns);
+			}
 		}
 		return playingCardList;
 	}
 
-	internal void CheckOverlap()
+	internal GameObject CheckOverlap()
 	{
 		var faceupCards = GetFaceupCards();
 		GameObject closestCard = null;
@@ -80,7 +86,10 @@ public class GameManager : MonoBehaviour
 			}
 
 		}
-		Debug.Log($"{closestCard.name}...{closestCardDist}");
+		Debug.Log(closestCardDist);
+		if(closestCardDist<1.5f)
+			return closestCard;
+		return null;
 	}
 
 	private void InitializeDeck()
@@ -90,20 +99,21 @@ public class GameManager : MonoBehaviour
 		var columnIndex = 1;
 		foreach (var column in columns)
 		{
-			for (var cardColumnCount = 0; cardColumnCount < columnIndex; cardColumnCount++)
+			var numberInStack = 0;
+			for (var cardColumnCount = 0; cardColumnCount < columnIndex+1; cardColumnCount++)
 			{
-
+				var newCard = Instantiate(deck.Pop(),column.transform.position + new Vector3(0, numberInStack * -.1f,0), Quaternion.identity,column.transform);
+				newCard.layer = numberInStack + 8;
+				newCard.GetComponent<SpriteRenderer>().sortingLayerName = (numberInStack+1).ToString().TrimStart(new Char[] { '0' });
+				newCard.GetComponent<PlayingCard>().SetLayer(numberInStack);
+				numberInStack++;
+				if(cardColumnCount != columnIndex)
+				{
+					newCard.GetComponent<PlayingCard>().FlipCard();
+				}
 			}
-			InstantiateCard(column);
+			columnIndex++;
 		}
-	}
-
-	private void InstantiateCard(GameObject parent)
-	{
-		var layThisDown = deck.Pop();
-		var cardGameObject = Instantiate(layThisDown, parent.transform.position, Quaternion.identity, parent.transform);
-		cardGameObject.layer = 8;
-		cardGameObject.GetComponent<SpriteRenderer>().sortingLayerName = "FaceUp";
 	}
 
 	static void Shuffle(ref List<GameObject> array)
