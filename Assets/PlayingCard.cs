@@ -10,7 +10,7 @@ public class PlayingCard : MonoBehaviour
 	public SuitColor suitColor;
 	public Suit suit;
 	public Rank rank;
-	private bool isFaceUp;
+	public bool isFaceUp;
 	private int layer;
 	public void Awake()
 	{
@@ -29,9 +29,4 @@ public class PlayingCard : MonoBehaviour
 			GetComponent<SpriteRenderer>().sprite = cardBack;
 		}
 	}
-
-	public void SetLayer(int l)
-	{
-		layer = l;
-	}	
 }

@@ -33,7 +33,16 @@ public class GameManager : MonoBehaviour
 
 	internal void RecheckColumns()
 	{
-		throw new NotImplementedException();
+
+		foreach (var column in columns)
+		{
+			Transform[] children = new Transform[column.transform.childCount];
+			for (int i = 0; i < column.transform.childCount; i++)
+			{
+				children[i] = column.transform.GetChild(i);
+			}
+			children[column.transform.childCount -1].GetComponent<Collider2D>().enabled = true;
+		}
 	}
 
 	// Start is called before the first frame update
@@ -61,7 +70,6 @@ public class GameManager : MonoBehaviour
 			{
 				var numberOfColumns = col.GetComponentsInChildren<PlayingCard>()?.Length != null ? col.GetComponentsInChildren<PlayingCard>()?.Length : 0;
 				playingCardList.Add(col.GetComponentInChildren<PlayingCard>().gameObject);
-				Debug.Log(numberOfColumns);
 			}
 		}
 		return playingCardList;
@@ -78,7 +86,7 @@ public class GameManager : MonoBehaviour
 			if (card != GameManager.Instance.selectedCard)
 			{
 				var distance = card.GetComponent<DragAndDrop>().GetDistanceFromDraggingCard(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-				if (closestCard == null || distance < closestCardDist)
+				if (closestCard == null || (distance < closestCardDist && card.GetComponent<PlayingCard>().isFaceUp))
 				{
 					closestCard = card;
 					closestCardDist = distance;
@@ -86,8 +94,7 @@ public class GameManager : MonoBehaviour
 			}
 
 		}
-		Debug.Log(closestCardDist);
-		if(closestCardDist<1.5f)
+		if(closestCardDist<2.5f)
 			return closestCard;
 		return null;
 	}
@@ -102,6 +109,11 @@ public class GameManager : MonoBehaviour
 			var numberInStack = 0;
 			for (var cardColumnCount = 0; cardColumnCount < columnIndex+1; cardColumnCount++)
 			{
+				//DEBUG, REMOVE AFTER FLIPPING WORKS!!
+				if (cardColumnCount == columnIndex)
+				{
+					continue;
+				}
 				var newCard = Instantiate(deck.Pop(),column.transform.position + new Vector3(0, numberInStack * -.1f,0), Quaternion.identity,column.transform);
 				newCard.GetComponent<SpriteRenderer>().sortingOrder = numberInStack+1;
 				newCard.layer = numberInStack;
@@ -114,6 +126,7 @@ public class GameManager : MonoBehaviour
 			}
 			columnIndex++;
 		}
+		RecheckColumns();
 	}
 
 	static void Shuffle(ref List<GameObject> array)
