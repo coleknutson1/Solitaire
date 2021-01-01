@@ -103,13 +103,13 @@ public class GameManager : MonoBehaviour
 			for (var cardColumnCount = 0; cardColumnCount < columnIndex+1; cardColumnCount++)
 			{
 				var newCard = Instantiate(deck.Pop(),column.transform.position + new Vector3(0, numberInStack * -.1f,0), Quaternion.identity,column.transform);
-				newCard.layer = numberInStack + 8;
-				newCard.GetComponent<SpriteRenderer>().sortingLayerName = (numberInStack+1).ToString().TrimStart(new Char[] { '0' });
-				newCard.GetComponent<PlayingCard>().SetLayer(numberInStack);
+				newCard.GetComponent<SpriteRenderer>().sortingOrder = numberInStack+1;
+				newCard.layer = numberInStack;
 				numberInStack++;
 				if(cardColumnCount != columnIndex)
 				{
 					newCard.GetComponent<PlayingCard>().FlipCard();
+					newCard.GetComponent<Collider2D>().enabled = false;
 				}
 			}
 			columnIndex++;

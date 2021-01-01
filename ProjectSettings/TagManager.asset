@@ -44,7 +44,7 @@ TagManager:
   - name: Stack
     uniqueID: 2213302563
     locked: 0
-  - name: FaceUp
+  - name: Card
     uniqueID: 833203011
     locked: 0
   - name: SelectedCard

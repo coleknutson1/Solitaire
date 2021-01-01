@@ -17,14 +17,15 @@ public class DragAndDrop : MonoBehaviour
     public bool isDragging;
     private Vector3 offset;
     private Vector3 holdPosition;
-    private string sortInt;
+    private int holdLayer = 0;
     public void OnMouseDown()
     {
         GameManager.Instance.selectedCard = gameObject;
+        holdLayer = GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder;
+        GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = 100;
         holdPosition = gameObject.transform.position;
+
         offset = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        sortInt = GetComponent<SpriteRenderer>().sortingLayerName;
-        GetComponent<SpriteRenderer>().sortingLayerName = "25";
         isDragging = true;
     }
 
@@ -32,14 +33,18 @@ public class DragAndDrop : MonoBehaviour
     {
         isDragging = false;
         transform.position = holdPosition;
+        GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = holdLayer;
         var closestObject = GameManager.Instance.CheckOverlap();
         if (closestObject == null)
             return;
-        GetComponent<SpriteRenderer>().sortingLayerName = sortInt;
-        if(closestObject.GetComponent<PlayingCard>().suitColor != GetComponent<PlayingCard>().suitColor)
-		{
+        var closestObjectPlayingCard = closestObject.GetComponent<PlayingCard>();
+        var currentPlayingCard = GetComponent<PlayingCard>();
+        
+        //If it's a valid lay, reparent current to new column
+        if (currentPlayingCard.suitColor != closestObjectPlayingCard.suitColor)
+        {
             transform.parent = closestObject.transform.parent;
-            transform.position = transform.parent.position - new Vector3(0f, (Int32.Parse(sortInt) * .1f), 0f);
+            transform.position = closestObject.transform.parent.position - new Vector3(0f, closestObjectPlayingCard.transform.parent.transform.childCount * -.1f, 0f);
 		}
         //GameManager.Instance.RecheckColumns();
     }
