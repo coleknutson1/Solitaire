@@ -64,10 +64,10 @@ public class PlayingCard : MonoBehaviour
 		}
 		else
 		{
-			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = 100;
+			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = holdSortingOrder;
 			transform.position = holdPosition;
 		}
-		//GameManager.Instance.RecheckColumns();
+		GameManager.Instance.RecheckColumns();
 	}
 
 	public float GetDistanceFromDraggingCard(Vector2 dCard)
