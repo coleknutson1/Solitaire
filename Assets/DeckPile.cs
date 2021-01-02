@@ -53,16 +53,22 @@ public class DeckPile : MonoBehaviour
 					deck.Push(nullFixCheck);
 				}
 			}
-			foreach(Transform child in showCard)
+			foreach(Transform child in showCard.transform)
 			{
-				Destroy(child);
+				Destroy(child.gameObject);
 			}
 			discardPile = new Stack<GameObject>();
 			return;
 		}
-		discardPile.Push(newCard);
+		//Disable collider on previous top card
+		//if(discardPile.Count > 0)
+		//{
+		//	var disableThisCollider = discardPile.Pop();
+		//	disableThisCollider.GetComponent<BoxCollider2D>().enabled = false;
+		//	discardPile.Push(disableThisCollider);
+		//}
 		newCard = deck.Pop();
-		newCard.layer = currentDiscard;
+		discardPile.Push(newCard);
 		newCard.GetComponent<SpriteRenderer>().sortingOrder = currentDiscard;
 		currentDiscard++;
 		Instantiate(newCard, showCard.transform.position, Quaternion.identity, showCard.transform);
@@ -84,7 +90,6 @@ public class DeckPile : MonoBehaviour
 			{
 				var newCard = Instantiate(deck.Pop(), column.transform.position + new Vector3(0, numberInStack * -.1f, 0), Quaternion.identity, column.transform);
 				newCard.GetComponent<SpriteRenderer>().sortingOrder = numberInStack + 1;
-				newCard.layer = numberInStack;
 				numberInStack++;
 				if (cardColumnCount != columnIndex)
 				{

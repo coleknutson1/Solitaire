@@ -64,36 +64,11 @@ public class GameManager : MonoBehaviour
 		List<GameObject> playingCardList = new List<GameObject>();
 		foreach (var col in columns)
 		{
-			if(col.GetComponentInChildren<PlayingCard>() != null)
+			if(col.transform.childCount > 0)
 			{
-				var numberOfColumns = col.GetComponentsInChildren<PlayingCard>()?.Length != null ? col.GetComponentsInChildren<PlayingCard>()?.Length : 0;
-				playingCardList.Add(col.GetComponentInChildren<PlayingCard>().gameObject);
+				playingCardList.Add(col.transform.GetChild(col.transform.childCount - 1).gameObject);
 			}
 		}
 		return playingCardList;
-	}
-
-	internal GameObject CheckOverlap()
-	{
-		var faceupCards = GetFaceupCards();
-		GameObject closestCard = null;
-		float closestCardDist = 1000f;
-
-		foreach (var card in faceupCards)
-		{
-			if (card != GameManager.Instance.selectedCard)
-			{
-				var distance = card.GetComponent<PlayingCard>().GetDistanceFromDraggingCard(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-				if (closestCard == null || (distance < closestCardDist && card.GetComponent<PlayingCard>().isFaceUp))
-				{
-					closestCard = card;
-					closestCardDist = distance;
-				}
-			}
-
-		}
-		if(closestCardDist<2.5f)
-			return closestCard;
-		return null;
-	}
+	}	
 }

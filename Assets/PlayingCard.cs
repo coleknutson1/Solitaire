@@ -11,10 +11,10 @@ public class PlayingCard : MonoBehaviour
 	public Suit suit;
 	public Rank rank;
 	public bool isFaceUp;
-	private int layer;
 	public bool isDragging;
 	private Vector3 offset;
 	private Vector3 holdPosition;
+	private int holdSortingOrder;
 
 	public void Awake()
 	{
@@ -30,6 +30,7 @@ public class PlayingCard : MonoBehaviour
 			GameManager.Instance.selectedCard.GetComponent<PlayingCard>().FlipCard();
 			return;
 		}
+		holdSortingOrder = GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder;
 		GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = 100;
 		holdPosition = gameObject.transform.position;
 
@@ -40,17 +41,29 @@ public class PlayingCard : MonoBehaviour
 	public void OnMouseUp()
 	{
 		isDragging = false;
-		var closestObject = GameManager.Instance.CheckOverlap();
+		var closestObject = CheckOverlap();
 		if (closestObject == null)
+		{
+			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = holdSortingOrder;
+			transform.position = holdPosition;
 			return;
+		}
 		var closestObjectPlayingCard = closestObject.GetComponent<PlayingCard>();
 		var currentPlayingCard = GetComponent<PlayingCard>();
 
 		//If it's a valid lay, reparent current to new column
 		if (currentPlayingCard.suitColor != closestObjectPlayingCard.suitColor)
 		{
+			
 			transform.parent = closestObject.transform.parent;
-			transform.position = closestObject.transform.parent.position - new Vector3(0f, closestObjectPlayingCard.transform.parent.transform.childCount * -.1f, 0f);
+			transform.position = closestObject.transform.parent.position - new Vector3(0f, /*closestObjectPlayingCard.transform.parent.transform.childCount * .5f*/1f, 0f);
+			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = closestObjectPlayingCard.transform.parent.transform.childCount;
+			
+		}
+		else
+		{
+		GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = 100;
+			transform.position = holdPosition;
 		}
 		//GameManager.Instance.RecheckColumns();
 	}
@@ -79,5 +92,30 @@ public class PlayingCard : MonoBehaviour
 		{
 			GetComponent<SpriteRenderer>().sprite = cardBack;
 		}
+	}
+
+	internal GameObject CheckOverlap()
+	{
+		var faceupCards = GameManager.Instance.GetFaceupCards();
+		GameObject closestCard = null;
+		float closestCardDist = 1000f;
+
+		foreach (var card in faceupCards)
+		{
+			if (card != GameManager.Instance.selectedCard)
+			{
+				var distance = card.GetComponent<PlayingCard>().GetDistanceFromDraggingCard(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+				if (closestCard == null || (distance < closestCardDist && card.GetComponent<PlayingCard>().isFaceUp))
+				{
+					closestCard = card;
+					closestCardDist = distance;
+				}
+			}
+
+		}
+		Debug.Log(closestCard + ":" + closestCardDist);
+		if (closestCardDist < 2.5f)
+			return closestCard;
+		return null;
 	}
 }
