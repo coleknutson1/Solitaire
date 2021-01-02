@@ -9,6 +9,7 @@ public class DeckPile : MonoBehaviour
 	GameObject showCard;
 	GameObject newCard;
 	GameObject deckObject;
+	int currentDiscard = 1;
 	public void Start()
 	{
 		deckObject = gameObject;
@@ -16,24 +17,26 @@ public class DeckPile : MonoBehaviour
 	}
 	public void OnMouseDown()
 	{
-		while (discardPile.Count != 0)
-		{
-			var nullFixCheck = discardPile.Pop();
-			if (nullFixCheck != null)
-			{
-				GameManager.Instance.deck.Push(nullFixCheck);
-			}
-		}
+
+		
 		if (GameManager.Instance.deck.Count < 1)
 		{ 			
 			deckObject.GetComponent<SpriteRenderer>().enabled = true;
-			
+			while (discardPile.Count != 0)
+			{
+				var nullFixCheck = discardPile.Pop();
+				if (nullFixCheck != null)
+				{
+					GameManager.Instance.deck.Push(nullFixCheck);
+				}
+			}
 			discardPile = new Stack<GameObject>();
 			return;
 		}
 		discardPile.Push(newCard);
 		newCard = GameManager.Instance.deck.Pop();
-		newCard.layer = 10;
+		newCard.layer = currentDiscard;
+		newCard.GetComponent<SpriteRenderer>().sortingOrder = currentDiscard;
 		Instantiate(newCard, showCard.transform.position, Quaternion.identity, showCard.transform);
 		if (GameManager.Instance.deck.Count < 1)
 		{

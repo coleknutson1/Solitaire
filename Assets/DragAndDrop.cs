@@ -17,7 +17,6 @@ public class DragAndDrop : MonoBehaviour
 	public bool isDragging;
 	private Vector3 offset;
 	private Vector3 holdPosition;
-	private int holdLayer = 0;
 	public void OnMouseDown()
 	{
 		GameManager.Instance.selectedCard = gameObject;
@@ -26,7 +25,6 @@ public class DragAndDrop : MonoBehaviour
 			GameManager.Instance.selectedCard.GetComponent<PlayingCard>().FlipCard();
 			return;
 		}
-		holdLayer = GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder;
 		GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = 100;
 		holdPosition = gameObject.transform.position;
 
@@ -37,7 +35,6 @@ public class DragAndDrop : MonoBehaviour
 	public void OnMouseUp()
 	{
 		isDragging = false;
-		GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = holdLayer;
 		var closestObject = GameManager.Instance.CheckOverlap();
 		if (closestObject == null)
 			return;
