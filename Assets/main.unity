@@ -152,6 +152,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6493058760930915811, guid: 80c5452b37963b24ab2526ccbf70dc59,
+        type: 3}
+      propertyPath: rank
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6297962484545929623, guid: 80c5452b37963b24ab2526ccbf70dc59,
         type: 3}
       propertyPath: m_Name
@@ -160,7 +165,7 @@ PrefabInstance:
     - target: {fileID: 8715050347074297604, guid: 80c5452b37963b24ab2526ccbf70dc59,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 8715050347074297604, guid: 80c5452b37963b24ab2526ccbf70dc59,
         type: 3}
@@ -227,7 +232,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3696741283838103341, guid: 80c5452b37963b24ab2526ccbf70dc59, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 80c5452b37963b24ab2526ccbf70dc59, type: 3}
 --- !u!1 &104945414 stripped
 GameObject:
@@ -242,10 +248,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -841439318273287917, guid: 8a0371fcfff700d48ae018f70148bf58,
+        type: 3}
+      propertyPath: rank
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5988807860958111817, guid: 8a0371fcfff700d48ae018f70148bf58,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 5988807860958111817, guid: 8a0371fcfff700d48ae018f70148bf58,
         type: 3}
@@ -317,7 +328,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_diamonds_queen_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2253962689495573870, guid: 8a0371fcfff700d48ae018f70148bf58, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8a0371fcfff700d48ae018f70148bf58, type: 3}
 --- !u!1001 &142064836
 PrefabInstance:
@@ -326,10 +338,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4109299641564072529, guid: 9505833c415d07f4687e8907c945fe9a,
+        type: 3}
+      propertyPath: rank
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4640800253941592185, guid: 9505833c415d07f4687e8907c945fe9a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 4640800253941592185, guid: 9505833c415d07f4687e8907c945fe9a,
         type: 3}
@@ -401,7 +418,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_diamonds_7_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4337587523477572601, guid: 9505833c415d07f4687e8907c945fe9a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9505833c415d07f4687e8907c945fe9a, type: 3}
 --- !u!1 &152328696 stripped
 GameObject:
@@ -505,10 +523,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3833508203376205005, guid: e38c99c5fcb03f8498847838e9800e3e,
+        type: 3}
+      propertyPath: rank
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3236666370805834435, guid: e38c99c5fcb03f8498847838e9800e3e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 3236666370805834435, guid: e38c99c5fcb03f8498847838e9800e3e,
         type: 3}
@@ -580,7 +603,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_diamonds_8_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 902342866579115251, guid: e38c99c5fcb03f8498847838e9800e3e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e38c99c5fcb03f8498847838e9800e3e, type: 3}
 --- !u!1001 &173100488
 PrefabInstance:
@@ -589,10 +613,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3864216881403079600, guid: 1771985e60b216a4ba843fac33cf03c5,
+        type: 3}
+      propertyPath: isFaceUp
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3864216881403079600, guid: 1771985e60b216a4ba843fac33cf03c5,
+        type: 3}
+      propertyPath: rank
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 836130371487243372, guid: 1771985e60b216a4ba843fac33cf03c5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 836130371487243372, guid: 1771985e60b216a4ba843fac33cf03c5,
         type: 3}
@@ -664,7 +698,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_diamonds_5_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7448780028845579871, guid: 1771985e60b216a4ba843fac33cf03c5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1771985e60b216a4ba843fac33cf03c5, type: 3}
 --- !u!1001 &174458042
 PrefabInstance:
@@ -673,10 +708,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6931512584141169817, guid: eb20f788e42160b42a74f4b5a41c8e48,
+        type: 3}
+      propertyPath: rank
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7375960833945674301, guid: eb20f788e42160b42a74f4b5a41c8e48,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 7375960833945674301, guid: eb20f788e42160b42a74f4b5a41c8e48,
         type: 3}
@@ -748,7 +788,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_hearts_9_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2936595371651683100, guid: eb20f788e42160b42a74f4b5a41c8e48, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: eb20f788e42160b42a74f4b5a41c8e48, type: 3}
 --- !u!1 &183289159 stripped
 GameObject:
@@ -766,7 +807,7 @@ PrefabInstance:
     - target: {fileID: 1943599514766508033, guid: ce6fe8438b3f3d04e943ddc2de98b684,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 1943599514766508033, guid: ce6fe8438b3f3d04e943ddc2de98b684,
         type: 3}
@@ -833,12 +874,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6972489326259176939, guid: ce6fe8438b3f3d04e943ddc2de98b684,
+        type: 3}
+      propertyPath: rank
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7205984943571704110, guid: ce6fe8438b3f3d04e943ddc2de98b684,
         type: 3}
       propertyPath: m_Name
       value: cards_traditional_hearts_3_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1815560859596939508, guid: ce6fe8438b3f3d04e943ddc2de98b684, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ce6fe8438b3f3d04e943ddc2de98b684, type: 3}
 --- !u!1 &219320622 stripped
 GameObject:
@@ -856,7 +903,7 @@ PrefabInstance:
     - target: {fileID: 2907340181648596670, guid: 05fd7e79ef9c26046aae2957cb63a566,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 2907340181648596670, guid: 05fd7e79ef9c26046aae2957cb63a566,
         type: 3}
@@ -928,7 +975,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_hearts_10_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7853278174045738045, guid: 05fd7e79ef9c26046aae2957cb63a566,
+        type: 3}
+      propertyPath: rank
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2750128336081112443, guid: 05fd7e79ef9c26046aae2957cb63a566, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 05fd7e79ef9c26046aae2957cb63a566, type: 3}
 --- !u!1 &245891054 stripped
 GameObject:
@@ -943,10 +996,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2236646952574908366, guid: 3258868b54cf4e2478c3dd5b08f052b4,
+        type: 3}
+      propertyPath: rank
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5176074261176602420, guid: 3258868b54cf4e2478c3dd5b08f052b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 5176074261176602420, guid: 3258868b54cf4e2478c3dd5b08f052b4,
         type: 3}
@@ -1018,7 +1076,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_club_5_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2471531191026468779, guid: 3258868b54cf4e2478c3dd5b08f052b4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3258868b54cf4e2478c3dd5b08f052b4, type: 3}
 --- !u!1 &312336542
 GameObject:
@@ -1134,7 +1193,7 @@ PrefabInstance:
     - target: {fileID: 6613923623588433340, guid: fe9083abb9f78d24d87d9ec3e1efc2ca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 6613923623588433340, guid: fe9083abb9f78d24d87d9ec3e1efc2ca,
         type: 3}
@@ -1201,7 +1260,13 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8432226570299205931, guid: fe9083abb9f78d24d87d9ec3e1efc2ca,
+        type: 3}
+      propertyPath: rank
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1344870971559129731, guid: fe9083abb9f78d24d87d9ec3e1efc2ca, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fe9083abb9f78d24d87d9ec3e1efc2ca, type: 3}
 --- !u!1 &445974050 stripped
 GameObject:
@@ -1216,10 +1281,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5772265701178998123, guid: 1ba79ea1c31519c43855579a774b77d5,
+        type: 3}
+      propertyPath: rank
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6671253014073379682, guid: 1ba79ea1c31519c43855579a774b77d5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 6671253014073379682, guid: 1ba79ea1c31519c43855579a774b77d5,
         type: 3}
@@ -1291,7 +1361,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_hearts_2_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2672722661912471476, guid: 1ba79ea1c31519c43855579a774b77d5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1ba79ea1c31519c43855579a774b77d5, type: 3}
 --- !u!1 &457643152 stripped
 GameObject:
@@ -1306,10 +1377,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8170068699185571779, guid: 4ab9476e2b8603248b2e573211267572,
+        type: 3}
+      propertyPath: rank
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6300627678513150663, guid: 4ab9476e2b8603248b2e573211267572,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 6300627678513150663, guid: 4ab9476e2b8603248b2e573211267572,
         type: 3}
@@ -1381,7 +1457,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_diamonds_10_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7256625428253691218, guid: 4ab9476e2b8603248b2e573211267572, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4ab9476e2b8603248b2e573211267572, type: 3}
 --- !u!1 &508411156 stripped
 GameObject:
@@ -1399,7 +1476,7 @@ PrefabInstance:
     - target: {fileID: 418022739804844940, guid: 5c53a960d34ed324ca1f7c385bbb4e1f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 418022739804844940, guid: 5c53a960d34ed324ca1f7c385bbb4e1f,
         type: 3}
@@ -1466,12 +1543,18 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 675957051446836155, guid: 5c53a960d34ed324ca1f7c385bbb4e1f,
+        type: 3}
+      propertyPath: rank
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2888857800178166503, guid: 5c53a960d34ed324ca1f7c385bbb4e1f,
         type: 3}
       propertyPath: m_Name
       value: cards_traditional_club_10_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6881804187956980555, guid: 5c53a960d34ed324ca1f7c385bbb4e1f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5c53a960d34ed324ca1f7c385bbb4e1f, type: 3}
 --- !u!1 &525052174
 GameObject:
@@ -1555,7 +1638,6 @@ MonoBehaviour:
   - {fileID: 1844962078}
   - {fileID: 2137576849}
   - {fileID: 72013852}
-  scale: 0.3
   columns:
   - {fileID: 1902912272}
   - {fileID: 1668078912}
@@ -1591,10 +1673,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_hearts_queen_0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000964858788754813, guid: 5b47671dda5288f48abb19bc9677197e,
+        type: 3}
+      propertyPath: rank
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 6752161284560552191, guid: 5b47671dda5288f48abb19bc9677197e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 6752161284560552191, guid: 5b47671dda5288f48abb19bc9677197e,
         type: 3}
@@ -1661,7 +1748,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4028543281768227257, guid: 5b47671dda5288f48abb19bc9677197e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5b47671dda5288f48abb19bc9677197e, type: 3}
 --- !u!1 &586406869 stripped
 GameObject:
@@ -1676,10 +1764,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -473937012006717788, guid: 13dc8a71f8e522347ad3b4f124d71d2e,
+        type: 3}
+      propertyPath: rank
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 5757171460349063737, guid: 13dc8a71f8e522347ad3b4f124d71d2e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 5757171460349063737, guid: 13dc8a71f8e522347ad3b4f124d71d2e,
         type: 3}
@@ -1751,7 +1844,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_club_king_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2648007723792402871, guid: 13dc8a71f8e522347ad3b4f124d71d2e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 13dc8a71f8e522347ad3b4f124d71d2e, type: 3}
 --- !u!1 &642453313 stripped
 GameObject:
@@ -1771,10 +1865,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_spade_5_0
       objectReference: {fileID: 0}
+    - target: {fileID: 5332465198396434524, guid: 837005c9b60c054429d4c385992b00ef,
+        type: 3}
+      propertyPath: rank
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7085210088610829582, guid: 837005c9b60c054429d4c385992b00ef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 7085210088610829582, guid: 837005c9b60c054429d4c385992b00ef,
         type: 3}
@@ -1841,7 +1940,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4320776438072952194, guid: 837005c9b60c054429d4c385992b00ef, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 837005c9b60c054429d4c385992b00ef, type: 3}
 --- !u!1 &644221863 stripped
 GameObject:
@@ -1859,7 +1959,7 @@ PrefabInstance:
     - target: {fileID: 146812391926078345, guid: 2c9dc2992e87a8a4a81d5518a6468c90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 146812391926078345, guid: 2c9dc2992e87a8a4a81d5518a6468c90,
         type: 3}
@@ -1931,7 +2031,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_club_2_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4036163126917003798, guid: 2c9dc2992e87a8a4a81d5518a6468c90,
+        type: 3}
+      propertyPath: rank
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8457946389513396327, guid: 2c9dc2992e87a8a4a81d5518a6468c90, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2c9dc2992e87a8a4a81d5518a6468c90, type: 3}
 --- !u!1 &669930118 stripped
 GameObject:
@@ -1958,10 +2064,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -421218887353213732, guid: b7da9ed122767c3448cf9b20c9f6913b,
+        type: 3}
+      propertyPath: rank
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 1843719741251504659, guid: b7da9ed122767c3448cf9b20c9f6913b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 1843719741251504659, guid: b7da9ed122767c3448cf9b20c9f6913b,
         type: 3}
@@ -2033,7 +2144,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_spade_king_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2584999108628169195, guid: b7da9ed122767c3448cf9b20c9f6913b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b7da9ed122767c3448cf9b20c9f6913b, type: 3}
 --- !u!1001 &720317009
 PrefabInstance:
@@ -2050,7 +2162,7 @@ PrefabInstance:
     - target: {fileID: 7801414699020017605, guid: da77f9ac31949a14e96be1ea002047b6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 7801414699020017605, guid: da77f9ac31949a14e96be1ea002047b6,
         type: 3}
@@ -2117,7 +2229,13 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9213429444439913422, guid: da77f9ac31949a14e96be1ea002047b6,
+        type: 3}
+      propertyPath: rank
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8075404042246663400, guid: da77f9ac31949a14e96be1ea002047b6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: da77f9ac31949a14e96be1ea002047b6, type: 3}
 --- !u!1001 &757486761
 PrefabInstance:
@@ -2131,10 +2249,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_club_4_0
       objectReference: {fileID: 0}
+    - target: {fileID: 4595747525306764849, guid: b44de07da7d9d1e42966aa9dfe743a1f,
+        type: 3}
+      propertyPath: rank
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5721059302253882879, guid: b44de07da7d9d1e42966aa9dfe743a1f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 5721059302253882879, guid: b44de07da7d9d1e42966aa9dfe743a1f,
         type: 3}
@@ -2201,7 +2324,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4856804361867516501, guid: b44de07da7d9d1e42966aa9dfe743a1f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b44de07da7d9d1e42966aa9dfe743a1f, type: 3}
 --- !u!1001 &763410416
 PrefabInstance:
@@ -2210,6 +2334,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7907119558608226387, guid: 785ff80716151fd45944571821d77279,
+        type: 3}
+      propertyPath: rank
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7110834130695577132, guid: 785ff80716151fd45944571821d77279,
         type: 3}
       propertyPath: m_Name
@@ -2218,7 +2347,7 @@ PrefabInstance:
     - target: {fileID: 8963826455727358825, guid: 785ff80716151fd45944571821d77279,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 8963826455727358825, guid: 785ff80716151fd45944571821d77279,
         type: 3}
@@ -2285,7 +2414,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7712457822051071092, guid: 785ff80716151fd45944571821d77279, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 785ff80716151fd45944571821d77279, type: 3}
 --- !u!1 &771730541 stripped
 GameObject:
@@ -2408,10 +2538,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6337483968026876088, guid: 7ccb51da9764f34429d370b5a152d2f1,
+        type: 3}
+      propertyPath: rank
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 996047134027527584, guid: 7ccb51da9764f34429d370b5a152d2f1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 996047134027527584, guid: 7ccb51da9764f34429d370b5a152d2f1,
         type: 3}
@@ -2483,7 +2618,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_diamonds_6_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1939017456309354579, guid: 7ccb51da9764f34429d370b5a152d2f1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7ccb51da9764f34429d370b5a152d2f1, type: 3}
 --- !u!1001 &840375812
 PrefabInstance:
@@ -2492,6 +2628,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5124966218790200319, guid: df5e3cba8011dc743887bd22d1de2d63,
+        type: 3}
+      propertyPath: rank
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2069151874936524767, guid: df5e3cba8011dc743887bd22d1de2d63,
         type: 3}
       propertyPath: m_Name
@@ -2500,7 +2641,7 @@ PrefabInstance:
     - target: {fileID: 3090007684153782970, guid: df5e3cba8011dc743887bd22d1de2d63,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 3090007684153782970, guid: df5e3cba8011dc743887bd22d1de2d63,
         type: 3}
@@ -2567,7 +2708,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2711306719645950966, guid: df5e3cba8011dc743887bd22d1de2d63, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: df5e3cba8011dc743887bd22d1de2d63, type: 3}
 --- !u!1001 &848758188
 PrefabInstance:
@@ -2576,6 +2718,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2540472031406376459, guid: 47015bb7d1759184d993eba930e459e5,
+        type: 3}
+      propertyPath: rank
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2506341832785885612, guid: 47015bb7d1759184d993eba930e459e5,
         type: 3}
       propertyPath: m_Name
@@ -2584,7 +2731,7 @@ PrefabInstance:
     - target: {fileID: 6203682352782522800, guid: 47015bb7d1759184d993eba930e459e5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 6203682352782522800, guid: 47015bb7d1759184d993eba930e459e5,
         type: 3}
@@ -2651,7 +2798,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2717902328610319028, guid: 47015bb7d1759184d993eba930e459e5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 47015bb7d1759184d993eba930e459e5, type: 3}
 --- !u!1001 &856956770
 PrefabInstance:
@@ -2660,10 +2808,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7517775172537578707, guid: 9b3c5e06c12552146b5ed10f5c194bd7,
+        type: 3}
+      propertyPath: rank
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8118052482550848809, guid: 9b3c5e06c12552146b5ed10f5c194bd7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 8118052482550848809, guid: 9b3c5e06c12552146b5ed10f5c194bd7,
         type: 3}
@@ -2735,7 +2888,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_spade_4_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6195596915165288868, guid: 9b3c5e06c12552146b5ed10f5c194bd7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9b3c5e06c12552146b5ed10f5c194bd7, type: 3}
 --- !u!1 &879829166
 GameObject:
@@ -2973,6 +3127,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8233129050104657417, guid: 5dd6980490c0b4e41a3c151f4898b040,
+        type: 3}
+      propertyPath: rank
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3729218240887816481, guid: 5dd6980490c0b4e41a3c151f4898b040,
         type: 3}
       propertyPath: m_Name
@@ -2981,7 +3140,7 @@ PrefabInstance:
     - target: {fileID: 4773446926988402386, guid: 5dd6980490c0b4e41a3c151f4898b040,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 4773446926988402386, guid: 5dd6980490c0b4e41a3c151f4898b040,
         type: 3}
@@ -3048,7 +3207,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1090317165832274576, guid: 5dd6980490c0b4e41a3c151f4898b040, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5dd6980490c0b4e41a3c151f4898b040, type: 3}
 --- !u!1 &892055359
 GameObject:
@@ -3165,6 +3325,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5359055134076683237, guid: d47f61cad3794354cbfc542a1f012f1b,
+        type: 3}
+      propertyPath: rank
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5875672757306510293, guid: d47f61cad3794354cbfc542a1f012f1b,
         type: 3}
       propertyPath: m_Name
@@ -3173,7 +3338,7 @@ PrefabInstance:
     - target: {fileID: 7629224740810189245, guid: d47f61cad3794354cbfc542a1f012f1b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.794
+      value: -34.964
       objectReference: {fileID: 0}
     - target: {fileID: 7629224740810189245, guid: d47f61cad3794354cbfc542a1f012f1b,
         type: 3}
@@ -3240,7 +3405,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -4496502891807974787, guid: d47f61cad3794354cbfc542a1f012f1b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d47f61cad3794354cbfc542a1f012f1b, type: 3}
 --- !u!1001 &914847986
 PrefabInstance:
@@ -3249,10 +3415,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5474420149318166514, guid: 7000b0cb0515dd84a80866501638feed,
+        type: 3}
+      propertyPath: rank
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8424599256959867949, guid: 7000b0cb0515dd84a80866501638feed,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 8424599256959867949, guid: 7000b0cb0515dd84a80866501638feed,
         type: 3}
@@ -3324,7 +3495,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_club_6_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5147266386017618745, guid: 7000b0cb0515dd84a80866501638feed, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7000b0cb0515dd84a80866501638feed, type: 3}
 --- !u!1 &1007411414
 GameObject:
@@ -3599,7 +3771,7 @@ PrefabInstance:
     - target: {fileID: 2557995905539931648, guid: 17dc7adcf4d161244aff7bc3f6f030b1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 2557995905539931648, guid: 17dc7adcf4d161244aff7bc3f6f030b1,
         type: 3}
@@ -3666,7 +3838,13 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8084563312033932404, guid: 17dc7adcf4d161244aff7bc3f6f030b1,
+        type: 3}
+      propertyPath: rank
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 6209569583176213329, guid: 17dc7adcf4d161244aff7bc3f6f030b1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 17dc7adcf4d161244aff7bc3f6f030b1, type: 3}
 --- !u!1 &1078499382 stripped
 GameObject:
@@ -3681,6 +3859,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 763446626451955409, guid: 1bde72407174f7d43b87cb9e9e09a50d,
+        type: 3}
+      propertyPath: rank
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6567765572039824282, guid: 1bde72407174f7d43b87cb9e9e09a50d,
         type: 3}
       propertyPath: m_Name
@@ -3689,7 +3872,7 @@ PrefabInstance:
     - target: {fileID: 8182931446178228877, guid: 1bde72407174f7d43b87cb9e9e09a50d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 8182931446178228877, guid: 1bde72407174f7d43b87cb9e9e09a50d,
         type: 3}
@@ -3756,7 +3939,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5470796262755478707, guid: 1bde72407174f7d43b87cb9e9e09a50d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1bde72407174f7d43b87cb9e9e09a50d, type: 3}
 --- !u!1 &1102003524 stripped
 GameObject:
@@ -3884,10 +4068,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_club_8_0
       objectReference: {fileID: 0}
+    - target: {fileID: 5049169692132826628, guid: 9f6eef6f9d33c7c4a886f13e02b4645c,
+        type: 3}
+      propertyPath: rank
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8316806928448182361, guid: 9f6eef6f9d33c7c4a886f13e02b4645c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 8316806928448182361, guid: 9f6eef6f9d33c7c4a886f13e02b4645c,
         type: 3}
@@ -3954,7 +4143,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 317130417045398216, guid: 9f6eef6f9d33c7c4a886f13e02b4645c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9f6eef6f9d33c7c4a886f13e02b4645c, type: 3}
 --- !u!1001 &1181203876
 PrefabInstance:
@@ -3971,7 +4161,7 @@ PrefabInstance:
     - target: {fileID: 4934248580160940131, guid: fe1cc744d2a5f1d4fba2798c7f7e8895,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 4934248580160940131, guid: fe1cc744d2a5f1d4fba2798c7f7e8895,
         type: 3}
@@ -4038,7 +4228,13 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6209894392896864284, guid: fe1cc744d2a5f1d4fba2798c7f7e8895,
+        type: 3}
+      propertyPath: rank
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -6796943979469733999, guid: fe1cc744d2a5f1d4fba2798c7f7e8895, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fe1cc744d2a5f1d4fba2798c7f7e8895, type: 3}
 --- !u!1001 &1183612832
 PrefabInstance:
@@ -4047,6 +4243,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3433249171641316393, guid: ae550850073971d4c9b04a321ba047a8,
+        type: 3}
+      propertyPath: rank
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 2303945008942305630, guid: ae550850073971d4c9b04a321ba047a8,
         type: 3}
       propertyPath: m_Name
@@ -4055,7 +4256,7 @@ PrefabInstance:
     - target: {fileID: 7569845208653913560, guid: ae550850073971d4c9b04a321ba047a8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 7569845208653913560, guid: ae550850073971d4c9b04a321ba047a8,
         type: 3}
@@ -4122,7 +4323,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8393303551147748069, guid: ae550850073971d4c9b04a321ba047a8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ae550850073971d4c9b04a321ba047a8, type: 3}
 --- !u!1001 &1195004431
 PrefabInstance:
@@ -4131,10 +4333,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -29355388751901160, guid: 4333645b21d564141992ba4a7f015edb,
+        type: 3}
+      propertyPath: rank
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4260495072592517451, guid: 4333645b21d564141992ba4a7f015edb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 4260495072592517451, guid: 4333645b21d564141992ba4a7f015edb,
         type: 3}
@@ -4206,7 +4413,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_club_3_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7188156176029736075, guid: 4333645b21d564141992ba4a7f015edb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4333645b21d564141992ba4a7f015edb, type: 3}
 --- !u!1 &1236229138 stripped
 GameObject:
@@ -4221,6 +4429,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7148388384788786403, guid: e6a450c6ab9ec3840b32dc331ca32a77,
+        type: 3}
+      propertyPath: rank
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4483954167302915853, guid: e6a450c6ab9ec3840b32dc331ca32a77,
         type: 3}
       propertyPath: m_Name
@@ -4229,7 +4442,7 @@ PrefabInstance:
     - target: {fileID: 6704195309889777821, guid: e6a450c6ab9ec3840b32dc331ca32a77,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 6704195309889777821, guid: e6a450c6ab9ec3840b32dc331ca32a77,
         type: 3}
@@ -4296,7 +4509,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6175251371258405138, guid: e6a450c6ab9ec3840b32dc331ca32a77, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e6a450c6ab9ec3840b32dc331ca32a77, type: 3}
 --- !u!1 &1276438336 stripped
 GameObject:
@@ -4311,6 +4525,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1704467846308798884, guid: 995943725428c9141a9f2ed2161463a9,
+        type: 3}
+      propertyPath: rank
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5523955271760119659, guid: 995943725428c9141a9f2ed2161463a9,
         type: 3}
       propertyPath: m_Name
@@ -4319,7 +4538,7 @@ PrefabInstance:
     - target: {fileID: 8632620997983103632, guid: 995943725428c9141a9f2ed2161463a9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 8632620997983103632, guid: 995943725428c9141a9f2ed2161463a9,
         type: 3}
@@ -4386,7 +4605,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2314978727820576601, guid: 995943725428c9141a9f2ed2161463a9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 995943725428c9141a9f2ed2161463a9, type: 3}
 --- !u!1001 &1320761747
 PrefabInstance:
@@ -4400,10 +4620,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_diamonds_4_0
       objectReference: {fileID: 0}
+    - target: {fileID: 5861412845537993421, guid: 52cc092349fa5c34e8d01a97ebbd2407,
+        type: 3}
+      propertyPath: rank
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7705331877965372168, guid: 52cc092349fa5c34e8d01a97ebbd2407,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 7705331877965372168, guid: 52cc092349fa5c34e8d01a97ebbd2407,
         type: 3}
@@ -4470,7 +4695,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 956016701085759052, guid: 52cc092349fa5c34e8d01a97ebbd2407, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 52cc092349fa5c34e8d01a97ebbd2407, type: 3}
 --- !u!1 &1331706833 stripped
 GameObject:
@@ -4490,10 +4716,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_hearts_8_0
       objectReference: {fileID: 0}
+    - target: {fileID: 6412272805822415719, guid: a48424d733dc83a4ea33be61633ea73f,
+        type: 3}
+      propertyPath: rank
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 6551438523481310024, guid: a48424d733dc83a4ea33be61633ea73f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 6551438523481310024, guid: a48424d733dc83a4ea33be61633ea73f,
         type: 3}
@@ -4560,7 +4791,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7662778285560202242, guid: a48424d733dc83a4ea33be61633ea73f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a48424d733dc83a4ea33be61633ea73f, type: 3}
 --- !u!1 &1362727877
 GameObject:
@@ -4677,6 +4909,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2510618439248447484, guid: d82139de12c35974eae9c5055d6a9d28,
+        type: 3}
+      propertyPath: rank
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4750752466834263997, guid: d82139de12c35974eae9c5055d6a9d28,
         type: 3}
       propertyPath: m_Name
@@ -4685,7 +4922,7 @@ PrefabInstance:
     - target: {fileID: 9157018909495519299, guid: d82139de12c35974eae9c5055d6a9d28,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 9157018909495519299, guid: d82139de12c35974eae9c5055d6a9d28,
         type: 3}
@@ -4752,7 +4989,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5922515592591436699, guid: d82139de12c35974eae9c5055d6a9d28, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d82139de12c35974eae9c5055d6a9d28, type: 3}
 --- !u!1001 &1417338640
 PrefabInstance:
@@ -4766,10 +5004,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_hearts_king_0
       objectReference: {fileID: 0}
+    - target: {fileID: 5919218743955376671, guid: 4f27cf9c7c7447b449fe603bf174cb7e,
+        type: 3}
+      propertyPath: rank
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 6756207499643587435, guid: 4f27cf9c7c7447b449fe603bf174cb7e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 6756207499643587435, guid: 4f27cf9c7c7447b449fe603bf174cb7e,
         type: 3}
@@ -4836,7 +5079,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3158052841420074867, guid: 4f27cf9c7c7447b449fe603bf174cb7e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4f27cf9c7c7447b449fe603bf174cb7e, type: 3}
 --- !u!1001 &1422243791
 PrefabInstance:
@@ -4845,6 +5089,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8822658567204985923, guid: 71159191f0019b148a8cd517ff0409d9,
+        type: 3}
+      propertyPath: rank
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7595082278327944683, guid: 71159191f0019b148a8cd517ff0409d9,
         type: 3}
       propertyPath: m_Name
@@ -4853,7 +5102,7 @@ PrefabInstance:
     - target: {fileID: 8572531533853346614, guid: 71159191f0019b148a8cd517ff0409d9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 8572531533853346614, guid: 71159191f0019b148a8cd517ff0409d9,
         type: 3}
@@ -4920,7 +5169,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -2103899200112351648, guid: 71159191f0019b148a8cd517ff0409d9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 71159191f0019b148a8cd517ff0409d9, type: 3}
 --- !u!1 &1432413891 stripped
 GameObject:
@@ -4959,10 +5209,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5844420339769596326, guid: afdbbef839a0b9545bf047eb840e2fef,
+        type: 3}
+      propertyPath: rank
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4953628518987300358, guid: afdbbef839a0b9545bf047eb840e2fef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 4953628518987300358, guid: afdbbef839a0b9545bf047eb840e2fef,
         type: 3}
@@ -5034,7 +5289,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_hearts_5_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 492762617627789186, guid: afdbbef839a0b9545bf047eb840e2fef, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: afdbbef839a0b9545bf047eb840e2fef, type: 3}
 --- !u!1001 &1540270328
 PrefabInstance:
@@ -5043,6 +5299,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3691060985999540142, guid: 3fd6fd4d0d125bf489df2fb4df5b358d,
+        type: 3}
+      propertyPath: isFaceUp
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691060985999540142, guid: 3fd6fd4d0d125bf489df2fb4df5b358d,
+        type: 3}
+      propertyPath: rank
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4767578136968353692, guid: 3fd6fd4d0d125bf489df2fb4df5b358d,
         type: 3}
       propertyPath: m_Name
@@ -5051,7 +5317,7 @@ PrefabInstance:
     - target: {fileID: 5492327677903799877, guid: 3fd6fd4d0d125bf489df2fb4df5b358d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 5492327677903799877, guid: 3fd6fd4d0d125bf489df2fb4df5b358d,
         type: 3}
@@ -5118,7 +5384,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8337389144643471917, guid: 3fd6fd4d0d125bf489df2fb4df5b358d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3fd6fd4d0d125bf489df2fb4df5b358d, type: 3}
 --- !u!1001 &1541234868
 PrefabInstance:
@@ -5135,7 +5402,7 @@ PrefabInstance:
     - target: {fileID: 1336638843097473429, guid: 6f898f2bece7fd24ca097f5fe2024dd9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 1336638843097473429, guid: 6f898f2bece7fd24ca097f5fe2024dd9,
         type: 3}
@@ -5202,7 +5469,13 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8552553452435303385, guid: 6f898f2bece7fd24ca097f5fe2024dd9,
+        type: 3}
+      propertyPath: rank
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -4608519221863356286, guid: 6f898f2bece7fd24ca097f5fe2024dd9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f898f2bece7fd24ca097f5fe2024dd9, type: 3}
 --- !u!1 &1572573032
 GameObject:
@@ -5333,7 +5606,7 @@ PrefabInstance:
     - target: {fileID: 3472033272699548835, guid: d765df6b22ea70f42a7fe4427be524ef,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 3472033272699548835, guid: d765df6b22ea70f42a7fe4427be524ef,
         type: 3}
@@ -5400,7 +5673,13 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5808513187661566203, guid: d765df6b22ea70f42a7fe4427be524ef,
+        type: 3}
+      propertyPath: rank
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8465994232609011906, guid: d765df6b22ea70f42a7fe4427be524ef, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d765df6b22ea70f42a7fe4427be524ef, type: 3}
 --- !u!1 &1602494710
 GameObject:
@@ -5523,10 +5802,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1122858710637239419, guid: d1979a84081154a46af293f9f098cafa,
+        type: 3}
+      propertyPath: rank
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7881368780554233144, guid: d1979a84081154a46af293f9f098cafa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 7881368780554233144, guid: d1979a84081154a46af293f9f098cafa,
         type: 3}
@@ -5598,7 +5882,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_diamonds_ace_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 830925731969652282, guid: d1979a84081154a46af293f9f098cafa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d1979a84081154a46af293f9f098cafa, type: 3}
 --- !u!1 &1668078912
 GameObject:
@@ -5715,6 +6000,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1281036124573066718, guid: 5f232af9028108041aaa9a6e02921819,
+        type: 3}
+      propertyPath: rank
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6734711221656224, guid: 5f232af9028108041aaa9a6e02921819, type: 3}
       propertyPath: m_Name
       value: cards_traditional_spade_2_0
@@ -5722,7 +6012,7 @@ PrefabInstance:
     - target: {fileID: 6480756269697942191, guid: 5f232af9028108041aaa9a6e02921819,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 6480756269697942191, guid: 5f232af9028108041aaa9a6e02921819,
         type: 3}
@@ -5789,7 +6079,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6081023028767227771, guid: 5f232af9028108041aaa9a6e02921819, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5f232af9028108041aaa9a6e02921819, type: 3}
 --- !u!1 &1676353296 stripped
 GameObject:
@@ -5918,10 +6209,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5008273437132703536, guid: f54f4c65f7436794ebf3c5e6fc917dba,
+        type: 3}
+      propertyPath: isFaceUp
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5008273437132703536, guid: f54f4c65f7436794ebf3c5e6fc917dba,
+        type: 3}
+      propertyPath: rank
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5309744743196279027, guid: f54f4c65f7436794ebf3c5e6fc917dba,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 5309744743196279027, guid: f54f4c65f7436794ebf3c5e6fc917dba,
         type: 3}
@@ -5993,7 +6294,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_club_7_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8598013027545280423, guid: f54f4c65f7436794ebf3c5e6fc917dba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f54f4c65f7436794ebf3c5e6fc917dba, type: 3}
 --- !u!1 &1780684806 stripped
 GameObject:
@@ -6037,10 +6339,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_hearts_ace_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8002697635245753995, guid: 8dc1234707192714db4f2117e1ef9983,
+        type: 3}
+      propertyPath: rank
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9186144501667886513, guid: 8dc1234707192714db4f2117e1ef9983,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 9186144501667886513, guid: 8dc1234707192714db4f2117e1ef9983,
         type: 3}
@@ -6107,7 +6414,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3126915828759467338, guid: 8dc1234707192714db4f2117e1ef9983, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8dc1234707192714db4f2117e1ef9983, type: 3}
 --- !u!1001 &1866145346
 PrefabInstance:
@@ -6116,10 +6424,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1860724794652697885, guid: 6b870385f748fb342a4670b004f2c282,
+        type: 3}
+      propertyPath: rank
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4371840216721483140, guid: 6b870385f748fb342a4670b004f2c282,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.412
+      value: -32.582
       objectReference: {fileID: 0}
     - target: {fileID: 4371840216721483140, guid: 6b870385f748fb342a4670b004f2c282,
         type: 3}
@@ -6191,7 +6504,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_hearts_4_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7779604954452422633, guid: 6b870385f748fb342a4670b004f2c282, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6b870385f748fb342a4670b004f2c282, type: 3}
 --- !u!1 &1884502761 stripped
 GameObject:
@@ -6323,7 +6637,7 @@ PrefabInstance:
     - target: {fileID: 1302970808646371514, guid: 5a47d952b7c57b847800772a3d5791bb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 1302970808646371514, guid: 5a47d952b7c57b847800772a3d5791bb,
         type: 3}
@@ -6395,7 +6709,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_club_ace_0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8282894427026163341, guid: 5a47d952b7c57b847800772a3d5791bb,
+        type: 3}
+      propertyPath: rank
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -896288566835421168, guid: 5a47d952b7c57b847800772a3d5791bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5a47d952b7c57b847800772a3d5791bb, type: 3}
 --- !u!1 &1959804250 stripped
 GameObject:
@@ -6433,10 +6753,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: cards_traditional_spade_ace_0
       objectReference: {fileID: 0}
+    - target: {fileID: 2733167332796458337, guid: 66d4ea36132514a41bd0361e10b6ead9,
+        type: 3}
+      propertyPath: rank
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6149920153945768699, guid: 66d4ea36132514a41bd0361e10b6ead9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.92
+      value: -32.09
       objectReference: {fileID: 0}
     - target: {fileID: 6149920153945768699, guid: 66d4ea36132514a41bd0361e10b6ead9,
         type: 3}
@@ -6503,7 +6828,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8064891526754258018, guid: 66d4ea36132514a41bd0361e10b6ead9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 66d4ea36132514a41bd0361e10b6ead9, type: 3}
 --- !u!1 &2135956939 stripped
 GameObject:

@@ -52,12 +52,14 @@ public class PlayingCard : MonoBehaviour
 		var currentPlayingCard = GetComponent<PlayingCard>();
 
 		//If it's a valid lay, reparent current to new column
-		if (currentPlayingCard.suitColor != closestObjectPlayingCard.suitColor)
+		if (currentPlayingCard.suitColor != closestObjectPlayingCard.suitColor && currentPlayingCard.rank == closestObjectPlayingCard.rank - 1)
 		{
 			//Parent to lowest faceup card
 			transform.parent = closestObject.transform;
-			transform.localPosition = new Vector3(0f, closestObjectPlayingCard.transform.parent.transform.childCount * -.6f, 0f);
-			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = closestObjectPlayingCard.transform.parent.transform.childCount;
+			transform.localPosition = new Vector3(0f, closestObjectPlayingCard.transform.parent.transform.childCount * -1.5f, 0f);
+			int childCount = 0;
+			RecursivelyGetChildCount(closestObject.transform, ref childCount);
+			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = childCount+1;
 
 		}
 		else
@@ -91,6 +93,16 @@ public class PlayingCard : MonoBehaviour
 		else
 		{
 			GetComponent<SpriteRenderer>().sprite = cardBack;
+		}
+	}
+
+	void RecursivelyGetChildCount(Transform trans, ref int childCount)
+	{
+		if (trans.parent != null)
+		{
+			trans = trans.parent;
+			childCount++;
+			RecursivelyGetChildCount(trans, ref childCount);
 		}
 	}
 

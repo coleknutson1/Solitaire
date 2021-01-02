@@ -66,26 +66,26 @@ public class GameManager : MonoBehaviour
 		{
 			if (col.transform.childCount > 0)
 			{
-				var youngestChild = RecursivelyGetYoungestChild(col.transform);
-				if(youngestChild != null)
-					playingCardList.Add(col.transform.GetChild(col.transform.childCount - 1).gameObject);
+				var youngestChild = col.transform.GetChild(0);
+				RecursivelyGetYoungestChild(col.transform, ref youngestChild);
+				playingCardList.Add(youngestChild.gameObject);
 			}
 		}
 		return playingCardList;
 	}
-	GameObject RecursivelyGetYoungestChild(Transform trans)
+
+	void RecursivelyGetYoungestChild(Transform trans, ref Transform childest)
 	{
 		foreach (Transform child in trans)
 		{
 			if (child.childCount > 0)
 			{
-				RecursivelyGetYoungestChild(child);
+				RecursivelyGetYoungestChild(child, ref childest);
 			}
 			else//base case
 			{
-				return child.gameObject;
+				childest = child.transform;
 			}
 		}
-		return null;
 	}
 }
