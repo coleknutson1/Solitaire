@@ -28,7 +28,7 @@ public class DeckPile : MonoBehaviour
 	}
 
 	static System.Random _random = new System.Random();
-	Stack<GameObject> discardPile = new Stack<GameObject>();
+	public Stack<GameObject> discardPile = new Stack<GameObject>();
 	GameObject showCard;
 	GameObject newCard;
 	GameObject deckObject;
@@ -60,13 +60,6 @@ public class DeckPile : MonoBehaviour
 			discardPile = new Stack<GameObject>();
 			return;
 		}
-		//Disable collider on previous top card
-		//if(discardPile.Count > 0)
-		//{
-		//	var disableThisCollider = discardPile.Pop();
-		//	disableThisCollider.GetComponent<BoxCollider2D>().enabled = false;
-		//	discardPile.Push(disableThisCollider);
-		//}
 		newCard = deck.Pop();
 		discardPile.Push(newCard);
 		newCard.GetComponent<SpriteRenderer>().sortingOrder = currentDiscard;
@@ -86,14 +79,14 @@ public class DeckPile : MonoBehaviour
 		foreach (var column in columns)
 		{
 			var numberInStack = 0;
-			for (var cardColumnCount = 0; cardColumnCount < columnIndex + 1; cardColumnCount++)
+			for (var cardColumnCount = 0; cardColumnCount < columnIndex; cardColumnCount++)
 			{
 				var newParent = column.transform;
 				RecursivelyGetYoungestChild(column.transform, ref newParent);
 				var newCard = Instantiate(deck.Pop(), column.transform.position + new Vector3(0, numberInStack * -.1f, 0), Quaternion.identity, newParent);
 				newCard.GetComponent<SpriteRenderer>().sortingOrder = numberInStack + 1;
 				numberInStack++;
-				if (cardColumnCount != columnIndex)
+				if (cardColumnCount != columnIndex-1)
 				{
 					newCard.GetComponent<PlayingCard>().FlipCard();
 					newCard.GetComponent<Collider2D>().enabled = false;

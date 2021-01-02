@@ -1646,7 +1646,11 @@ MonoBehaviour:
   - {fileID: 1114293198}
   - {fileID: 1725580283}
   - {fileID: 1362727877}
-  selectedCard: {fileID: 0}
+  feeds:
+  - {fileID: 1025541077}
+  - {fileID: 892055359}
+  - {fileID: 1015984509}
+  - {fileID: 884787525}
 --- !u!4 &525052176
 Transform:
   m_ObjectHideFlags: 0
@@ -3023,6 +3027,7 @@ GameObject:
   - component: {fileID: 884787527}
   - component: {fileID: 884787526}
   - component: {fileID: 884787528}
+  - component: {fileID: 884787529}
   m_Layer: 0
   m_Name: Feed4
   m_TagString: Untagged
@@ -3120,6 +3125,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &884787529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884787525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 1
+  suit: 3
+  rank: 0
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1001 &891631997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3221,6 +3246,7 @@ GameObject:
   - component: {fileID: 892055361}
   - component: {fileID: 892055360}
   - component: {fileID: 892055362}
+  - component: {fileID: 892055363}
   m_Layer: 0
   m_Name: Feed2
   m_TagString: Untagged
@@ -3318,6 +3344,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &892055363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892055359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 0
+  suit: 1
+  rank: 0
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1001 &903806759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3539,6 +3585,7 @@ GameObject:
   - component: {fileID: 1015984511}
   - component: {fileID: 1015984510}
   - component: {fileID: 1015984512}
+  - component: {fileID: 1015984513}
   m_Layer: 0
   m_Name: Feed3
   m_TagString: Untagged
@@ -3636,6 +3683,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &1015984513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015984509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 1
+  suit: 2
+  rank: 0
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1 &1021749553 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4483954167302915853, guid: e6a450c6ab9ec3840b32dc331ca32a77,
@@ -3653,6 +3720,7 @@ GameObject:
   - component: {fileID: 1025541079}
   - component: {fileID: 1025541078}
   - component: {fileID: 1025541080}
+  - component: {fileID: 1025541081}
   m_Layer: 0
   m_Name: Feed1
   m_TagString: Untagged
@@ -3750,6 +3818,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &1025541081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025541077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 0
+  suit: 0
+  rank: 0
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1 &1042305586 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5708312035405220230, guid: 7ccb51da9764f34429d370b5a152d2f1,
