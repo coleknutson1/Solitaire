@@ -34,12 +34,12 @@ public class GameManager : MonoBehaviour
 	{
 		foreach (var column in columns)
 		{
-			if (column.transform.childCount < 1)
-				continue;
-
-			var youngestChild = column.transform.GetChild(0);
-			RecursivelyGetYoungestChild(ref youngestChild);
-			youngestChild.GetComponent<BoxCollider2D>().enabled = true;
+			Transform[] children = new Transform[column.transform.childCount];
+			for (int i = 0; i < column.transform.childCount; i++)
+			{
+				children[i] = column.transform.GetChild(i);
+			}
+			children[column.transform.childCount - 1].GetComponent<Collider2D>().enabled = true;
 		}
 	}
 
@@ -67,20 +67,20 @@ public class GameManager : MonoBehaviour
 			if (col.transform.childCount > 0)
 			{
 				var youngestChild = col.transform.GetChild(0);
-				RecursivelyGetYoungestChild(ref youngestChild);
+				RecursivelyGetYoungestChild(col.transform, ref youngestChild);
 				playingCardList.Add(youngestChild.gameObject);
 			}
 		}
 		return playingCardList;
 	}
 
-	void RecursivelyGetYoungestChild(ref Transform childest)
+	void RecursivelyGetYoungestChild(Transform trans, ref Transform childest)
 	{
-		foreach (Transform child in childest)
+		foreach (Transform child in trans)
 		{
 			if (child.childCount > 0)
 			{
-				RecursivelyGetYoungestChild(ref childest);
+				RecursivelyGetYoungestChild(child, ref childest);
 			}
 			else//base case
 			{
