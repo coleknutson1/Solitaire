@@ -34,12 +34,12 @@ public class GameManager : MonoBehaviour
 	{
 		foreach (var column in columns)
 		{
-			Transform[] children = new Transform[column.transform.childCount];
-			for (int i = 0; i < column.transform.childCount; i++)
-			{
-				children[i] = column.transform.GetChild(i);
-			}
-			children[column.transform.childCount - 1].GetComponent<Collider2D>().enabled = true;
+			if (column.transform.childCount < 1)
+				continue;
+
+			var youngestChild = column.transform.GetChild(0);
+			RecursivelyGetYoungestChild(youngestChild, ref youngestChild);
+			youngestChild.GetComponent<BoxCollider2D>().enabled = true;
 		}
 	}
 
