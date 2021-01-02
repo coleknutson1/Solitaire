@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
 public enum SuitColor { BLACK, RED }
 public enum Suit { CLUB, SPADE, DIAMOND, HEART }
@@ -15,6 +17,7 @@ public class PlayingCard : MonoBehaviour
 	private Vector3 offset;
 	private Vector3 holdPosition;
 	private int holdSortingOrder;
+	public GameObject selectedCard = null;
 
 	public void Awake()
 	{
@@ -24,15 +27,22 @@ public class PlayingCard : MonoBehaviour
 
 	public void OnMouseDown()
 	{
-		GameManager.Instance.selectedCard = gameObject;
-		if (!GameManager.Instance.selectedCard.GetComponent<PlayingCard>().isFaceUp)
+		selectedCard = gameObject;
+		holdPosition = gameObject.transform.position;
+		holdSortingOrder = selectedCard.GetComponent<SpriteRenderer>().sortingOrder;
+		if (!selectedCard.GetComponent<PlayingCard>().isFaceUp)
 		{
-			GameManager.Instance.selectedCard.GetComponent<PlayingCard>().FlipCard();
+			selectedCard.GetComponent<PlayingCard>().FlipCard();
 			return;
 		}
-		holdSortingOrder = GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder;
-		GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = 100;
-		holdPosition = gameObject.transform.position;
+		selectedCard.GetComponent<SpriteRenderer>().sortingOrder = 87;
+
+		//If it has children, we want to take them with it
+		if (selectedCard.transform.childCount > 0)
+		{
+			var sortingOrder = 87;
+			RecursivelySetChildCount(selectedCard.transform, ref sortingOrder);
+		}
 
 		offset = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
 		isDragging = true;
@@ -44,7 +54,7 @@ public class PlayingCard : MonoBehaviour
 		var closestObject = CheckOverlap();
 		if (closestObject == null)
 		{
-			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = holdSortingOrder;
+			selectedCard.GetComponent<SpriteRenderer>().sortingOrder = holdSortingOrder;
 			transform.position = holdPosition;
 			return;
 		}
@@ -59,15 +69,15 @@ public class PlayingCard : MonoBehaviour
 			transform.localPosition = new Vector3(0f, closestObjectPlayingCard.transform.parent.transform.childCount * -1.5f, 0f);
 			int childCount = 0;
 			RecursivelyGetChildCount(closestObject.transform, ref childCount);
-			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = childCount+1;
+			selectedCard.GetComponent<SpriteRenderer>().sortingOrder = childCount+1;
 
 		}
 		else
 		{
-			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = holdSortingOrder;
+			selectedCard.GetComponent<SpriteRenderer>().sortingOrder = holdSortingOrder;
 			transform.position = holdPosition;
 		}
-		GameManager.Instance.RecheckColumns();
+		RecheckColumns();
 	}
 
 	public float GetDistanceFromDraggingCard(Vector2 dCard)
@@ -106,6 +116,17 @@ public class PlayingCard : MonoBehaviour
 		}
 	}
 
+	void RecursivelySetChildCount(Transform trans, ref int childCount)
+	{
+		if (trans.childCount > 0)
+		{
+			childCount++;
+			trans = trans.GetChild(0);
+			trans.GetComponent<SpriteRenderer>().sortingOrder = childCount;
+			RecursivelySetChildCount(trans, ref childCount);
+		}
+	}
+
 	internal GameObject CheckOverlap()
 	{
 		var faceupCards = GameManager.Instance.GetFaceupCards();
@@ -114,7 +135,7 @@ public class PlayingCard : MonoBehaviour
 
 		foreach (var card in faceupCards)
 		{
-			if (card != GameManager.Instance.selectedCard)
+			if (card != selectedCard)
 			{
 				var distance = card.GetComponent<PlayingCard>().GetDistanceFromDraggingCard(Camera.main.ScreenToWorldPoint(Input.mousePosition));
 				if (closestCard == null || (distance < closestCardDist && card.GetComponent<PlayingCard>().isFaceUp))
@@ -123,11 +144,25 @@ public class PlayingCard : MonoBehaviour
 					closestCardDist = distance;
 				}
 			}
-
 		}
 		Debug.Log(closestCard + ":" + closestCardDist);
 		if (closestCardDist < 2.5f)
 			return closestCard;
 		return null;
+	}
+
+	internal void RecheckColumns()
+	{
+		foreach (var column in GameManager.Instance.columns)
+		{
+			var childCount = 10;
+			if (column.transform.childCount < 1)
+				continue;
+
+			var youngestChild = column.transform.GetChild(0);
+			GameManager.Instance.RecursivelyGetYoungestChild(youngestChild, ref youngestChild);
+			youngestChild.GetComponent<BoxCollider2D>().enabled = true;
+			RecursivelySetChildCount(column.transform, ref childCount);
+		}
 	}
 }

@@ -27,21 +27,7 @@ public class GameManager : MonoBehaviour
 
 	public List<GameObject> deckPrefabs = new List<GameObject>();
 	public List<GameObject> columns = new List<GameObject>();
-	public GameObject selectedCard = null;
-
-	//Reevaluate the column after we have
-	internal void RecheckColumns()
-	{
-		foreach (var column in columns)
-		{
-			if (column.transform.childCount < 1)
-				continue;
-
-			var youngestChild = column.transform.GetChild(0);
-			RecursivelyGetYoungestChild(youngestChild, ref youngestChild);
-			youngestChild.GetComponent<BoxCollider2D>().enabled = true;
-		}
-	}
+	public List<GameObject> feeds = new List<GameObject>();
 
 	// Start is called before the first frame update
 	void Start()
@@ -74,7 +60,7 @@ public class GameManager : MonoBehaviour
 		return playingCardList;
 	}
 
-	void RecursivelyGetYoungestChild(Transform trans, ref Transform childest)
+	public void RecursivelyGetYoungestChild(Transform trans, ref Transform childest)
 	{
 		foreach (Transform child in trans)
 		{
