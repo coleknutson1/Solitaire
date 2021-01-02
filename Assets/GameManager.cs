@@ -39,14 +39,14 @@ public class GameManager : MonoBehaviour
 			{
 				children[i] = column.transform.GetChild(i);
 			}
-			children[column.transform.childCount -1].GetComponent<Collider2D>().enabled = true;
+			children[column.transform.childCount - 1].GetComponent<Collider2D>().enabled = true;
 		}
 	}
 
 	// Start is called before the first frame update
 	void Start()
 	{
-		DeckPile.Instance.InitializeDeck(deckPrefabs,columns);
+		DeckPile.Instance.InitializeDeck(deckPrefabs, columns);
 		Screen.fullScreen = true;
 	}
 
@@ -64,11 +64,28 @@ public class GameManager : MonoBehaviour
 		List<GameObject> playingCardList = new List<GameObject>();
 		foreach (var col in columns)
 		{
-			if(col.transform.childCount > 0)
+			if (col.transform.childCount > 0)
 			{
-				playingCardList.Add(col.transform.GetChild(col.transform.childCount - 1).gameObject);
+				var youngestChild = RecursivelyGetYoungestChild(col.transform);
+				if(youngestChild != null)
+					playingCardList.Add(col.transform.GetChild(col.transform.childCount - 1).gameObject);
 			}
 		}
 		return playingCardList;
-	}	
+	}
+	GameObject RecursivelyGetYoungestChild(Transform trans)
+	{
+		foreach (Transform child in trans)
+		{
+			if (child.childCount > 0)
+			{
+				RecursivelyGetYoungestChild(child);
+			}
+			else//base case
+			{
+				return child.gameObject;
+			}
+		}
+		return null;
+	}
 }

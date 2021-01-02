@@ -54,15 +54,15 @@ public class PlayingCard : MonoBehaviour
 		//If it's a valid lay, reparent current to new column
 		if (currentPlayingCard.suitColor != closestObjectPlayingCard.suitColor)
 		{
-			
-			transform.parent = closestObject.transform.parent;
-			transform.position = closestObject.transform.parent.position - new Vector3(0f, /*closestObjectPlayingCard.transform.parent.transform.childCount * .5f*/1f, 0f);
+			//Parent to lowest faceup card
+			transform.parent = closestObject.transform;
+			transform.localPosition = new Vector3(0f, closestObjectPlayingCard.transform.parent.transform.childCount * -.6f, 0f);
 			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = closestObjectPlayingCard.transform.parent.transform.childCount;
-			
+
 		}
 		else
 		{
-		GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = 100;
+			GameManager.Instance.selectedCard.GetComponent<SpriteRenderer>().sortingOrder = 100;
 			transform.position = holdPosition;
 		}
 		//GameManager.Instance.RecheckColumns();

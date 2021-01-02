@@ -88,7 +88,9 @@ public class DeckPile : MonoBehaviour
 			var numberInStack = 0;
 			for (var cardColumnCount = 0; cardColumnCount < columnIndex + 1; cardColumnCount++)
 			{
-				var newCard = Instantiate(deck.Pop(), column.transform.position + new Vector3(0, numberInStack * -.1f, 0), Quaternion.identity, column.transform);
+				var newParent = column.transform;
+				RecursivelyGetYoungestChild(column.transform, ref newParent);
+				var newCard = Instantiate(deck.Pop(), column.transform.position + new Vector3(0, numberInStack * -.1f, 0), Quaternion.identity, newParent);
 				newCard.GetComponent<SpriteRenderer>().sortingOrder = numberInStack + 1;
 				numberInStack++;
 				if (cardColumnCount != columnIndex)
@@ -114,6 +116,21 @@ public class DeckPile : MonoBehaviour
 			GameObject t = array[r];
 			array[r] = array[i];
 			array[i] = t;
+		}
+	}
+
+	void RecursivelyGetYoungestChild(Transform trans, ref Transform childest)
+	{
+		foreach (Transform child in trans)
+		{
+			if (child.childCount > 0)
+			{
+				RecursivelyGetYoungestChild(child, ref childest);
+			}
+			else//base case
+			{
+				childest = child.transform;
+			}
 		}
 	}
 }
