@@ -4046,6 +4046,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1114293200}
   - component: {fileID: 1114293201}
+  - component: {fileID: 1114293202}
   - component: {fileID: 1114293199}
   m_Layer: 0
   m_Name: Column5
@@ -4144,6 +4145,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &1114293202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114293198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 0
+  suit: 0
+  rank: 99
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1001 &1126286886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4892,6 +4913,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1362727879}
   - component: {fileID: 1362727880}
+  - component: {fileID: 1362727881}
   - component: {fileID: 1362727878}
   m_Layer: 0
   m_Name: Column7
@@ -4990,6 +5012,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &1362727881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362727877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 0
+  suit: 0
+  rank: 99
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1001 &1409889475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5575,6 +5617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1572573034}
   - component: {fileID: 1572573035}
+  - component: {fileID: 1572573036}
   - component: {fileID: 1572573033}
   m_Layer: 0
   m_Name: Column3
@@ -5673,6 +5716,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &1572573036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572573032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 0
+  suit: 0
+  rank: 99
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1 &1579588255 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6182961896263541917, guid: afdbbef839a0b9545bf047eb840e2fef,
@@ -5779,6 +5842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1602494712}
   - component: {fileID: 1602494713}
+  - component: {fileID: 1602494714}
   - component: {fileID: 1602494711}
   m_Layer: 0
   m_Name: Column4
@@ -5877,6 +5941,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &1602494714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602494710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 0
+  suit: 0
+  rank: 99
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1 &1624225294 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8735023629207446047, guid: eb20f788e42160b42a74f4b5a41c8e48,
@@ -5983,6 +6067,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668078914}
   - component: {fileID: 1668078915}
+  - component: {fileID: 1668078916}
   - component: {fileID: 1668078913}
   m_Layer: 0
   m_Name: Column2
@@ -6081,6 +6166,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &1668078916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668078912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 0
+  suit: 0
+  rank: 99
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1001 &1671446906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6186,6 +6291,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1725580285}
   - component: {fileID: 1725580286}
+  - component: {fileID: 1725580287}
   - component: {fileID: 1725580284}
   m_Layer: 0
   m_Name: Column6
@@ -6284,6 +6390,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &1725580287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725580283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 0
+  suit: 0
+  rank: 99
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1 &1741690020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2367565014384979775, guid: d765df6b22ea70f42a7fe4427be524ef,
@@ -6611,6 +6737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1902912274}
   - component: {fileID: 1902912275}
+  - component: {fileID: 1902912276}
   - component: {fileID: 1902912273}
   m_Layer: 0
   m_Name: Column1
@@ -6709,6 +6836,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.7, y: 7.15}
   m_EdgeRadius: 0
+--- !u!114 &1902912276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902912272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e7ea80efecdef745ac6e77ce901397a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardBack: {fileID: 0}
+  cardFront: {fileID: 0}
+  suitColor: 0
+  suit: 0
+  rank: 99
+  isFaceUp: 0
+  isDragging: 0
+  selectedCard: {fileID: 0}
 --- !u!1 &1911409831 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6434180005391425511, guid: 3258868b54cf4e2478c3dd5b08f052b4,
